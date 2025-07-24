@@ -1,7 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "tailwind-scrollbar-hide/v4";
 
 @custom-variant dark (&:is(.dark *));
+
+@layer utilities {
+  .flex-full {
+    flex: 0 0 100%;
+  }
+}
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
